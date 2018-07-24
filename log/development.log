@@ -4565,3 +4565,13 @@ Processing by StatsController#index as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1
   Rendered stats/index.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/stats" for 100.35.223.31 at 2018-07-24 20:16:05 +0000
+Cannot render console from 100.35.223.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StatsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts"  ORDER BY "posts"."id" DESC LIMIT 1[0m
+  Rendered stats/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 29ms (Views: 17.1ms | ActiveRecord: 1.4ms)
