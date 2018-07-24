@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  namespace :admin do
+  scope '/admin', module: 'admin' do
     resources :stats, only: [:index]
   end
 
